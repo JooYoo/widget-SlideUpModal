@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+
+  margin: 0;
 }
