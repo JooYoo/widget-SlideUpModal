@@ -38,9 +38,52 @@ body {
   align-items: flex-start;
 
   width: 100%;
-  height: 7%;
+  height: 20%;
 
   border-radius: 10vmin 10vmin 0 0;
   border: 0.3vmin solid rgba(0, 0, 0, 0.4);
   background-color: rgba(27, 27, 27, 1);
+}
+
+.slideup__btn {
+  position: absolute;
+  top: 32px;
+  height: 0.8vmin;
+  width: 30vmin;
+  background-color: rgba(27, 27, 27, 1);
+  box-shadow: 2px 2px rgba(60, 60, 60, 1), -2px -2px rgba(0, 0, 0, 1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.slide-up-anim {
+  animation: slide-up-anim 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-up-anim {
+  0% {
+    height: 7%;
+  }
+  50% {
+    height: 1%;
+  }
+  100% {
+    height: 58%;
+  }
+}
+
+.slide-down-anim {
+  animation: slide-down-anim 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-down-anim {
+  0% {
+    height: 58%;
+  }
+  50% {
+    height: 65%;
+  }
+  100% {
+    height: 7%;
+  }
 }
